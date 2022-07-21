@@ -1,0 +1,40 @@
+GET http://localhost:3000/users/
+
+###
+
+GET http://localhost:3000/users/bobross
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "bobross",
+    "password": "pass3",
+    "name": "Bob Ross",
+    "tasks": [
+        {
+        "description": "paint bruhs and stuff",
+        "done": false
+        }
+    ]
+}
+
+###
+
+PATCH http://localhost:3000/users/bobross
+Content-Type: application/json
+
+{
+    "tasks": [
+        {
+            "description": "clean brush",
+            "done": false
+        },
+        {
+            "description": "paint art",
+            "done": false
+        }
+    ]
+}

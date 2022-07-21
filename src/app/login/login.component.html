@@ -1,0 +1,15 @@
+<div class="container password-container">
+    <h2>LOGIN</h2>
+
+    <div *ngIf="showInvalid==true" class="warning-ribbon">
+        <p>Invalid username or password.</p>
+    </div>
+
+    <label><b>Username</b></label>
+    <input type="text" [(ngModel)]="userName" placeholder="Enter Username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" [(ngModel)]="passWord" placeholder="Enter Password" required>
+
+    <button type="button" (click)="tryLogin()">Login</button>
+</div>

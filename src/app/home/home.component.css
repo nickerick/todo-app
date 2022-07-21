@@ -1,0 +1,77 @@
+h1 {
+  color: #5477b8;
+  font-size: 3em;
+  margin-top: 0;
+  text-shadow: -1px 1px 0 #ccc,
+    1px 1px 0 #ccc,
+    1px -1px 0 #ccc,
+    -1px -1px 0 #ccc;
+}
+
+.title {
+  text-align: center;
+}
+
+.notes-container {
+  background: rgb(255, 255, 255);
+}
+
+.container {
+  margin: auto;
+  margin-top: 100px;
+  padding: 16px;
+  max-width: 600px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border: 1px solid #ccc;
+  padding: 4px;
+  width: 470px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+li:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.task-remove {
+  border: 1px solid #ccc;
+  padding: 7px;
+  width: 30px;
+  transition: 200ms;
+  border-left: none;
+}
+
+.task-remove:hover {
+  background-color: #5477b8;
+  color: white;
+}
+
+.new-task input,
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.new-task button {
+  background-color: #5477b8;
+  color: white;
+  padding: 8px;
+  border-left: none;
+  cursor: pointer;
+}
+
+.new-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

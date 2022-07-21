@@ -1,0 +1,44 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "bobross",
+            "password": "pass1",
+            "name": "Bob Ross",
+            "tasks": [
+                {
+                    "description": "set up easal",
+                    "done": false
+                },
+                {
+                    "description": "paint masterpiece",
+                    "done": false
+                },
+                {
+                    "description": "clean brushes",
+                    "done": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "username": "jdoe",
+            "password": "pass2",
+            "name": "John Doe",
+            "tasks": [
+                {
+                    "description": "work",
+                    "done": false
+                },
+                {
+                    "description": "cook dinner",
+                    "done": false
+                },
+                {
+                    "description": "shower",
+                    "done": false
+                }
+            ]
+        }
+    ]
+}

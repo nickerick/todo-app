@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="title">
+    <h1>To Do List</h1>
+  </div>
+  
+  <div class="new-task">
+    <input type="text" [(ngModel)]="description" placeholder="New Task" required (keyup.enter)="addTask()">
+  
+    <button type="button" (click)="addTask()">Add</button>
+  </div>
+
+  <div class="notes-container">
+    <ul>
+      <div *ngFor="let task of tasks; index as i" style="margin-bottom: 6px;">
+        <li [ngStyle]="{'text-decoration': (task.done) ? 'line-through' : 'none', 'background-color': (task.done) ? '#f0f0f0' : 'white'}" (click)="markDone(i)">{{ task.description }}</li>
+        <button class="task-remove" (click)="deleteTask(i)">X</button>
+      </div>
+    </ul>
+  </div>
+
+</div>
