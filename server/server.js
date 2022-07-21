@@ -17,4 +17,4 @@ app.use(cors())
 const subscribersRouter = require('./routes/router')
 app.use('/users', subscribersRouter)
 
-app.listen(3000, () => console.log('Server Started')) 
+app.listen(process.env.PORT || 4200, () => console.log('Server Started')) 

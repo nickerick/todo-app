@@ -9,7 +9,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  rootURL = 'http://localhost:3000/users';
+  rootURL = 'https://nicksangularapp.herokuapp.com/users';
 
   getUser(username: string) {
     return this.http.get(this.rootURL + '/' + username, { responseType: 'json' });
